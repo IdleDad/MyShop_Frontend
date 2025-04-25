@@ -1,0 +1,130 @@
+:root {
+  --primary-color: #0077ff;
+  --primary-hover: #005fcc;
+  --danger-color: #f33;
+  --danger-bg: #fff0f0;
+  --border-radius: 6px;
+  --font-main: 'Segoe UI', sans-serif;
+  --font-size-sm: 13px;
+  --font-size-md: 14px;
+  --font-size-lg: 16px;
+  --font-size-xl: 18px;
+  --font-size-xxl: 24px; /* scaled down from 28px for better match */
+  --text-muted: #555;
+  --border-color: #ddd;
+  --light-bg: #f8f8f8;
+}
+
+.cart-container {
+  font-family: var(--font-main);
+  padding: 30px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.cart-title {
+  text-align: center;
+  font-size: var(--font-size-xxl); /* now 24px */
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.cart-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  border-bottom: 1px solid var(--border-color);
+  padding: 20px 0;
+  position: relative;
+}
+
+.cart-img {
+  width: 100px; /* was 120px */
+  height: 100px;
+  object-fit: contain;
+  border-radius: var(--border-radius);
+  border: 1px solid #eee;
+}
+
+.cart-details {
+  flex: 1;
+}
+
+.cart-details h3 {
+  font-size: var(--font-size-lg); /* now 16px */
+  margin-bottom: 5px;
+}
+
+.cart-meta {
+  font-size: var(--font-size-sm); /* now 13px */
+  color: var(--text-muted);
+  margin: 2px 0;
+}
+
+.cart-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.cart-controls button {
+  padding: 5px 10px;
+  font-size: var(--font-size-sm);
+  border: 1px solid #ccc;
+  background: var(--light-bg);
+  cursor: pointer;
+  border-radius: var(--border-radius);
+}
+
+.cart-delete {
+  background-color: var(--danger-bg);
+  border: 1px solid var(--danger-color);
+  color: var(--danger-color);
+}
+
+.cart-links {
+  margin-top: 8px;
+  font-size: var(--font-size-sm);
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+.cart-links span {
+  margin-right: 8px;
+}
+
+.cart-price {
+  font-weight: bold;
+  font-size: var(--font-size-lg); /* now 16px */
+  margin-left: auto;
+  min-width: 90px;
+  text-align: right;
+}
+
+.cart-total {
+  text-align: right;
+  margin-top: 20px;
+  font-size: var(--font-size-lg); /* now 16px */
+}
+
+.checkout-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+}
+
+.checkout-btn {
+  padding: 12px 24px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  font-size: var(--font-size-md);
+}
+
+.checkout-btn:hover {
+  background-color: var(--primary-hover);
+}

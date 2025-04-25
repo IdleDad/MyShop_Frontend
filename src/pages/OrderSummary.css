@@ -1,0 +1,59 @@
+:root {
+  --primary-color: #0077ff;
+  --primary-hover: #005fcc;
+  --text-main: #1e1e1e;
+  --bg-light: #ffffff;
+  --border-color: #eee;
+  --border-radius: 8px;
+  --font-main: 'Segoe UI', sans-serif;
+  --font-size-md: 16px;
+  --font-size-lg: 18px;
+}
+
+/* 📦 Page Container */
+.summary-container {
+  font-family: var(--font-main);
+  padding: 40px;
+  text-align: center;
+  max-width: 800px;
+  margin: auto;
+}
+
+/* 🧾 Individual Order Summary Item */
+.summary-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin: 24px auto;
+  border: 1px solid var(--border-color);
+  padding: 16px;
+  border-radius: var(--border-radius);
+  background-color: var(--bg-light);
+  max-width: 600px;
+}
+
+/* 🖼️ Image Style */
+.summary-item img {
+  width: 120px;
+  height: auto;
+  object-fit: contain;
+  border-radius: var(--border-radius);
+}
+
+/* 🛒 CTA Button */
+.place-order-btn {
+  margin-top: 32px;
+  padding: 12px 24px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  font-size: var(--font-size-md);
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.place-order-btn:hover {
+  background-color: var(--primary-hover);
+  transform: translateY(-2px);
+}

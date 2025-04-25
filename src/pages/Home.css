@@ -1,0 +1,84 @@
+:root {
+    --primary-color: #0077ff;
+    --primary-hover: #005fcc;
+    --border-radius: 10px;
+    --font-main: 'Segoe UI', sans-serif;
+    --font-size-sm: 14px;
+    --font-size-md: 16px;
+    --font-size-lg: 22px;
+    --text-dark: #1E1E1E;
+    --text-muted: #555;
+    --bg-light: #ffffff;
+    --bg-faded: #ffeeee;
+    --border-color: #e5e5e5;
+    --shadow-hover: 0 8px 20px rgba(0, 0, 0, 0.08);
+  }
+  
+  .home-wrapper {
+    font-family: var(--font-main);
+    padding: 32px 64px;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  
+  /* 🖼️ Hero Carousel */
+  .carousel .slide img {
+    width: 100%;
+    height: 450px;
+    border-radius: var(--border-radius);
+    object-fit: contain;
+    background-color: var(--bg-faded);
+  }
+  
+  /* 🧩 Section Block */
+  .section {
+    margin-top: 60px;
+  }
+  
+  .section-title {
+    font-size: var(--font-size-lg);
+    font-weight: 600;
+    margin-bottom: 24px;
+    color: var(--text-dark);
+  }
+  
+  /* 📦 Product Grid */
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 32px;
+  }
+  
+  /* 🧱 Product Card */
+  .product-card {
+    background-color: var(--bg-light);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    padding: 24px 16px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--text-dark);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    height: 200px;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
+  }
+  
+  /* 🖼️ Product Image */
+  .product-card img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    margin-bottom: 16px;
+  }
+  
+  /* 📝 Product Name */
+  .product-name {
+    font-size: var(--font-size-md);
+    font-weight: 500;
+    color: var(--text-dark);
+  }
+  

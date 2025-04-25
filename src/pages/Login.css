@@ -1,0 +1,93 @@
+:root {
+  --primary-color: #0077ff;
+  --primary-hover: #005fcc;
+  --text-main: #333;
+  --text-light: #555;
+  --bg-light: #ffffff;
+  --bg-gray: #f4f4f4;
+  --card-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --border-radius: 10px;
+  --font-main: 'Segoe UI', sans-serif;
+  --font-size-sm: 14px;
+  --font-size-md: 16px;
+  --font-size-lg: 20px;
+  --font-size-xl: 24px;
+}
+
+/* 🌐 Full Page Centering */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: var(--bg-gray);
+  font-family: var(--font-main);
+}
+
+/* 💳 Card Box */
+.login-card {
+  background: var(--bg-light);
+  padding: 40px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--card-shadow);
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* 🧢 Brand Logo + Title */
+.login-brand img {
+  width: 60px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.login-brand h1 {
+  font-size: var(--font-size-xl);
+  margin: 0 0 20px;
+  color: var(--text-main);
+}
+
+/* 📝 Form Title & Fields */
+.login-form h2 {
+  margin-bottom: 20px;
+  font-size: var(--font-size-lg);
+  color: var(--text-main);
+}
+
+.login-form input {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 12px;
+  font-size: var(--font-size-md);
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+/* 🎯 Buttons */
+.login-form button {
+  width: 100%;
+  padding: 12px;
+  font-size: var(--font-size-md);
+  border-radius: 6px;
+  border: none;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+/* 🔐 Sign In Button */
+.login-form button[type='submit'] {
+  background: var(--primary-color);
+  color: white;
+}
+
+.login-form button[type='submit']:hover {
+  background: var(--primary-hover);
+}
+
+/* 🆕 Sign Up Button */
+.signup-btn {
+  background: #f0f0f0;
+  color: var(--primary-color);
+}

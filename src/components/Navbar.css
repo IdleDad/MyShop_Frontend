@@ -1,0 +1,134 @@
+:root {
+    --nav-bg: #2B2D42;
+    --nav-text: #F8F9FA;
+    --nav-subtext: #dddddd;
+    --primary-color: #0077ff;
+    --primary-hover: #005fcc;
+    --accent-color: #FF6B35;
+    --border-radius: 8px;
+    --font-main: 'Poppins', sans-serif;
+    --font-size-sm: 12px;
+    --font-size-md: 14px;
+    --font-size-lg: 16px;
+  }
+  
+  /* 🔷 Navbar Container */
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--nav-bg);
+    padding: 12px 32px;
+    height: 56px;
+    gap: 24px;
+    font-family: var(--font-main);
+    color: var(--nav-text);
+  }
+  
+  /* 🧢 Logo */
+  .nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: var(--nav-text);
+    font-size: 20px;
+    font-weight: 600;
+  }
+  
+  .nav-logo img {
+    width: 32px;
+    height: auto;
+  }
+  
+  /* 📍 Location */
+  .nav-location {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: var(--font-size-md);
+    line-height: 1.2;
+    color: var(--nav-text);
+  }
+  
+  .small-text {
+    font-size: var(--font-size-sm);
+    color: var(--nav-subtext);
+  }
+  
+  /* 🔎 Search Bar */
+  /* 🔎 Search Bar */
+.nav-search {
+    display: flex;
+    flex: 1;
+    max-width: 600px;
+    height: 40px;
+    background: white;
+    border-radius: 50px; /* More pill-like */
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  }
+  
+  /* Dropdown on the left */
+  .nav-dropdown {
+    padding: 0 12px;
+    border: none;
+    background: #eee;
+    font-size: var(--font-size-md);
+    border-right: 1px solid #ccc;
+    border-radius: 50px 0 0 50px;
+  }
+  
+  /* Input */
+  .nav-search input {
+    flex: 1;
+    border: none;
+    padding: 0 16px;
+    font-size: var(--font-size-md);
+    outline: none;
+  }
+  
+  /* 🔍 Button (merged shape) */
+  .search-btn {
+    padding: 0 18px;
+    background-color: var(--accent-color);
+    border: none;
+    color: rgb(0, 0, 0);
+    font-size: var(--font-size-md);
+    border-radius: 0 50px 50px 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s ease;
+  }
+  
+  
+  .search-btn:hover {
+    background-color: var(--primary-hover);
+    color: rgb(255, 255, 255);
+  }
+  
+  
+  /* 👤 Account Section */
+  .nav-account {
+    display: flex;
+    flex-direction: column;
+    font-size: var(--font-size-md);
+    color: var(--nav-text);
+  }
+  
+  .nav-account a {
+    font-weight: 600;
+    color: var(--nav-text);
+    text-decoration: none;
+  }
+  
+  /* 🛒 Cart Link */
+  .nav-cart {
+    font-size: var(--font-size-lg);
+    font-weight: 500;
+    color: var(--nav-text);
+    text-decoration: none;
+  }
+  
